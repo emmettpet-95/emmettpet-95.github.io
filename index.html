@@ -1,1 +1,99 @@
-
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Emmett Peters, aerospace engineering PhD student at CU Boulder. Research on satellite drag, thermospheric density, and satellite reentry prediction.">
+  <title>Emmett Peters | Aerospace Engineering</title>
+  <style>
+    :root {
+      color-scheme: dark;
+      --background: #0a1421;
+      --surface: #122234;
+      --ink: #eef4fa;
+      --muted: #b6c7d8;
+      --accent: #86e0da;
+      --line: #30475b;
+    }
+    * { box-sizing: border-box; }
+    body { margin: 0; background: var(--background); color: var(--ink); font: 1rem/1.65 system-ui, sans-serif; }
+    a { color: var(--accent); text-underline-offset: .25em; }
+    a:focus-visible { outline: 2px solid var(--accent); outline-offset: .35rem; }
+    .wrap { width: min(100% - 2.5rem, 65rem); margin-inline: auto; }
+    header, footer { border-block-end: 1px solid var(--line); }
+    .bar { display: flex; flex-wrap: wrap; align-items: baseline; justify-content: space-between; gap: .75rem 2rem; padding-block: 1.2rem; }
+    nav { display: flex; flex-wrap: wrap; gap: .6rem 1.35rem; }
+    nav a { text-decoration: none; }
+    nav a:hover { text-decoration: underline; }
+    .name { color: var(--ink); font-weight: 700; }
+    .hero { padding-block: clamp(4rem, 10vw, 8rem) clamp(3rem, 7vw, 5.5rem); }
+    .affiliation { color: var(--accent); font-size: .95rem; font-weight: 650; }
+    h1, h2, h3 { line-height: 1.15; margin: 0; }
+    h1 { font-size: clamp(3rem, 9vw, 6.7rem); letter-spacing: -.065em; }
+    h2 { font-size: clamp(1.65rem, 4vw, 2.4rem); letter-spacing: -.03em; }
+    h3 { font-size: 1.3rem; }
+    p { margin: .75rem 0 0; color: var(--muted); max-width: 66ch; }
+    .intro { font-size: clamp(1.1rem, 2.5vw, 1.45rem); max-width: 42ch; }
+    .section { border-top: 1px solid var(--line); padding-block: 2.1rem 2.7rem; }
+    .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 20rem), 1fr)); gap: 1rem; margin-top: 1.25rem; }
+    article { background: var(--surface); border: 1px solid var(--line); border-radius: .75rem; padding: 1.4rem; }
+    footer { border-block: 1px solid var(--line) 0; color: var(--muted); }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="wrap bar">
+      <a class="name" href="#main">Emmett Peters</a>
+      <nav aria-label="Main navigation">
+        <a href="#research">Research</a>
+        <a href="#work">Selected work</a>
+        <a href="#education">Education</a>
+        <a href="https://github.com/emmettpet-95">GitHub</a>
+      </nav>
+    </div>
+  </header>
+  <main id="main" class="wrap">
+    <section class="hero" aria-labelledby="name">
+      <p class="affiliation">Aerospace Engineering PhD student · University of Colorado Boulder</p>
+      <h1 id="name">Emmett Peters</h1>
+      <p class="intro">I study how variability in the upper atmosphere affects satellite drag, orbit decay, and reentry timing.</p>
+    </section>
+    <section class="section" id="research">
+      <h2>Research</h2>
+      <div class="grid">
+        <article>
+          <h3>Atmospheric density and satellite reentry</h3>
+          <p>I compare reentry predictions from WACCM-X, NRLMSIS 2.1, and an exponential atmosphere model against Space-Track TIP decay estimates. My analysis examines how the timing differences vary with geomagnetic activity, season, and prediction lead time.</p>
+        </article>
+      </div>
+    </section>
+    <section class="section" id="work">
+      <h2>Selected work</h2>
+      <div class="grid">
+        <article>
+          <h3>Orbit propagation workflow</h3>
+          <p>I use TLEs and SGP4 to initialize trajectories at a common prediction epoch, then propagate them with different atmospheric density models to compare predicted reentry times.</p>
+        </article>
+        <article>
+          <h3>Reentry statistics</h3>
+          <p>I analyze reentry timing and event rates across geomagnetic conditions, accounting for exposure time in each activity range and comparing a mixed-object sample with a Starlink subset.</p>
+        </article>
+      </div>
+    </section>
+    <section class="section" id="education">
+      <h2>Education</h2>
+      <div class="grid">
+        <article>
+          <h3>University of Colorado Boulder</h3>
+          <p>PhD student, Aerospace Engineering · 2024–present</p>
+        </article>
+        <article>
+          <h3>University of Wisconsin–Madison</h3>
+          <p>Engineering Mechanics · 2020–2024</p>
+        </article>
+      </div>
+    </section>
+  </main>
+  <footer><div class="wrap bar"><span>Emmett Peters</span><a href="https://github.com/emmettpet-95">GitHub profile</a></div></footer>
+</body>
+</html>
